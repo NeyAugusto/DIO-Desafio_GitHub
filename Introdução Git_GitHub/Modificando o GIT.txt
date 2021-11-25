@@ -1,0 +1,130 @@
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls
+Coxinha.md
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ mkdir receitas
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls
+Coxinha.md  receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ mv Coxinha.md ./receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls
+receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ cd receitas
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas/receitas (master)
+$ ls
+Coxinha.md
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas/receitas (master)
+$ cd ..
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Coxinha.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        receitas/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git add Coxinha.md receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    Coxinha.md -> receitas/Coxinha.md
+
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git commit -m "Cria pasta receitas, move arquivo receitas"
+[master cc900eb] Cria pasta receitas, move arquivo receitas
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Coxinha.md => receitas/Coxinha.md (100%)
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls receitas/
+Coxinha.md
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls
+receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ echo > README.MD
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ LS
+README.MD  receitas
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git s
+send-email        show-branch       stash             switch
+shortlog          sparse-checkout   status
+show              stage             submodule
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.MD
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.MD
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git add *
+warning: LF will be replaced by CRLF in README.MD.
+The file will have its original line endings in your working directory
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls
+README.MD  receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   README.MD
+
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git commit -m "Adiciona index"
+[master cc009bf] Adiciona index
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.MD

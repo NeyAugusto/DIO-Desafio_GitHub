@@ -1,0 +1,55 @@
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=neyvicente@outlook.com
+user.name=NeyAugusto
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git remote add origin https://github.com/NeyAugusto/livro-receitas.git
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git remote -v
+origin  https://github.com/NeyAugusto/livro-receitas.git (fetch)
+origin  https://github.com/NeyAugusto/livro-receitas.git (push)
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.40 KiB | 239.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NeyAugusto/livro-receitas.git
+ * [new branch]      master -> master

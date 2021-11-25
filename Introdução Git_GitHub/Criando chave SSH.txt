@@ -1,0 +1,45 @@
+$ ssh-keygen -t ed25519 -C neyvicente@outlook.com
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Ieda/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Ieda/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Ieda/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:rTaD6HSth0D+SOO3d4dRdJV57hYFhRIqpECGV62PcgI neyvicente@outlook.com
+The key's randomart image is:
++--[ED25519 256]--+
+|   o+....   ...==|
+|  .... o.  .o ooo|
+|   .  ... .. o .o|
+|  E . .  o  .  ..|
+|   +   oS ..   ..|
+|    B.oo...     o|
+|   ooOo.*  o   . |
+|   oo.+oooo .    |
+|    ..o+ . .     |
++----[SHA256]-----+
+
+Ney Augusto@NeyAugusto MINGW64 ~
+$ cd /c/Users/Ieda/.ssh
+
+Ney Augusto@NeyAugusto MINGW64 ~/.ssh
+$ ls
+id_ed25519  id_ed25519.pub
+
+Ney Augusto@NeyAugusto MINGW64 ~/.ssh
+$ cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMfFi4P+09hyDICtTX9DHxARy0IGvvgnzIXeypVr+Fvp neyvicente@outlook.com
+
+Ney Augusto@NeyAugusto MINGW64 ~/.ssh
+$ eval $(ssh-agente -s)
+bash: ssh-agente: command not found
+
+Ney Augusto@NeyAugusto MINGW64 ~/.ssh
+$ eval $(ssh-agent -s)
+Agent pid 1922
+
+Ney Augusto@NeyAugusto MINGW64 ~/.ssh
+$ ssh-add id_ed25519
+Enter passphrase for id_ed25519:
+Identity added: id_ed25519 (neyvicente@outlook.com)

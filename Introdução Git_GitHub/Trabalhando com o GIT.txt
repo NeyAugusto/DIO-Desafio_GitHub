@@ -1,0 +1,59 @@
+Ney Augusto@NeyAugusto MINGW64 /c
+$ ls
+'$Recycle.Bin'/             PerfLogs/                     Windows/
+'$WinREAgent'/             'Program Files'/               Workspace/
+'Arquivos de Programas'@   'Program Files (x86)'/         WpSystem/
+'Documents and Settings'@   ProgramData/                  hiberfil.sys
+ DumpStack.log.tmp          Recovery/                     pagefile.sys
+ Intel/                    'System Volume Information'/   swapfile.sys
+ MSOCache/                  UkLog.dat
+ OneDriveTemp/              Users/
+
+Ney Augusto@NeyAugusto MINGW64 /c
+$ cd Workspace/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace
+$
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace
+$ mkdir livro-receitas
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace
+$ ls
+livro-receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace
+$ cd livro-receitas/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas
+$ git init
+Initialized empty Git repository in C:/Workspace/livro-receitas/.git/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ ls -a
+./  ../  .git/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ cd .git/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas/.git (GIT_DIR!)
+$ cd ..
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git config --global  user.email "neyvicente@outlook.com"
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git config --global user.name NeyAugusto
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git add *
+
+Ney Augusto@NeyAugusto MINGW64 /c/Workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master (root-commit) a5403d8] commit inicial
+ 1 file changed, 50 insertions(+)
+ create mode 100644 Coxinha.md
